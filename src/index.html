@@ -6,10 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + "px";
+    </script>
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+    <div class="wrap">
+        <header>
+            <i class="icon iconfont icon-fangzi"></i>
+            <h3>上海</h3>
+            <i class="icon iconfont icon-xaingxia"></i>
+            <div class="form">
+                <i class="icon iconfont icon-sousuo" style="color:#666;font-size:16px;margin-top:-5px;"></i>
+                <input type="text" placeholder="输入小区 搜索房源">
+            </div>
+            <i class="icon iconfont icon-ren"></i>
+        </header>
+        <nav>
+            <p>位置 <i class="icon iconfont icon-xaingxia"></i></p>
+            <p>租金 <i class="icon iconfont icon-xaingxia"></i></p>
+            <p class="active">合租 <i class="icon iconfont icon-xaingxia"></i></p>
+            <p>更多 <i class="icon iconfont icon-xaingxia"></i></p>
+        </nav>
+        <main class="main swiper-container">
+            <div class="swiper-wrapper">
+                <div class="one swiper-slide"></div>
+                <div class="two swiper-slide"></div>
+                <div class="three swiper-slide">
+                </div>
+                <div class="four swiper-slide"></div>
+            </div>
+        </main>
+    </div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
